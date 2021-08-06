@@ -220,9 +220,12 @@ namespace TestWeek6
                 Console.WriteLine($"Saldo: {conto.Saldo}");
                 Console.WriteLine($"Data Ultima Operazione: {conto.DataUltimaOperazione}");
                 Console.WriteLine("Movimenti effettuati:");
+                int count = 1;
                 foreach(Movimento movimento in conto.Movimenti)
                 {
+                    Console.WriteLine($"Movimento [{count}]");
                     Console.WriteLine(movimento);
+                    count++;
                 }
             }
         }
